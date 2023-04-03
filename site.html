@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register for my Event</title>
+</head>
+
+<body>
+    <form action="thank you.html" method="get">
+        <table width="900px" align="center">
+            <tr align="center">
+                <td colspan="2">
+                    <h2>
+                        Register for my Event
+                    </h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="fullname">Enter your full name:</label>
+                </td>
+                <td>
+                    <input type="text" id="fullname" size="25" maxlength="25" required placeholder="fullname"
+                        name="fullname">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="username">select a username</label>
+                </td>
+                <td>
+                    <input type="text" id="username" size="25" maxlength="25" required placeholder="username"
+                        name="username">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="psw">Enter your password:</label>
+                </td>
+                <td>
+                    <input type="text" id="password" size="25" maxlength="25" minlength="6" required
+                        placeholder="password" name="password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="female">select your gender</label>
+                </td>
+                <td>
+                    <input type="radio" name="gender" id="female" value="female"> female
+                    <input type="radio" name="gender" id="male" value="male"> male
+                    <input type="radio" name="gender" id="rather not say" value="rather not say"> rather not say
+
+                </td>
+            </tr>
+            <tr>
+                <td><label for="mailer1">Check for our Mailers</label></td>
+                <td>
+                    <input type="checkbox" name="mailer1" id="mailer1" value="fashion" checked>fashion magazine
+                    <input type="checkbox" name="mailer2" id="mailer2" value="news">latest news
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="DOB">Enter your date of birth</label>
+                </td>
+                <td><input type="date" name="DOB" id="DOB"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Photo">Upload your photo</label>
+                </td>
+                <td><input type="file" name="photo" id="photo"></td>
+            </tr>
+            <tr>
+                <td><label for="country">Select your country</label></td>
+                <td>
+                    <select name="country" id="country">
+                        <option value="#"></option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Brazil">Brazil</option>
+                        <option value="Cuba">Cuba</option>
+                        <option value="Denmark">Denmark</option>
+                        <option value="USA">USA</option>
+                        <option value="India" selected>India</option>
+                    </select>
+                </td>
+            </tr>
+            <td><label for="Address">Enter Your Address</label>
+            </td>
+            <td>
+                <textarea name="Address" id="address" cols="30" rows="3"
+                    placeholder="Enter your address here uwu"></textarea>
+            </td>
+            <tr>
+                <td>
+                    <label for="browser">Choose your browser from the list:</label>
+                    <input list="browsers" name="browser" id="browser">
+                </td>
+                <td>
+                    <datalist id="browsers">
+                      <option value="Edge">
+                      <option value="Firefox">
+                      <option value="Chrome">
+                      <option value="Opera">
+                      <option value="Safari">
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit">submit my form</td>
+                <td><input type="reset">Reset the form</td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
